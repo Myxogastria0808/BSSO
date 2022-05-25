@@ -1,0 +1,156 @@
+/*共通*/
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.big.video {
+    width: 110%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.big.top_logo {
+    z-index: 100;
+    margin-top: -60px;
+}
+
+.big.wrap{
+    float: right;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.big.box{
+    display:table-cell;
+    width:130px; /*margin of line spacing*/
+    height:100px;
+    text-align:center;
+    vertical-align:middle;
+    color: white;
+    font-size: 25px;
+    font-family: 'OCR A Extended', sans-serif;
+}
+.big.box_blank{
+    display:table-cell;
+    padding-right: 60px;
+    padding: 20px;
+}
+/*Hamburger menu*/
+.big.nav {
+    position: static;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -600px;
+    margin-right: -700px;
+  }
+  
+  /*box frasme*/
+  .big.label {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    z-index: 1000;
+  }
+  
+  /*line(three)*/
+  .big.span {
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    transition: .3s;
+    z-index: 100;
+  }
+  
+  .big.span1 {
+    top: 60px;
+    background-color: aqua;
+  }
+  
+  .big.span2 {
+    top: 75px;
+    background-color: aqua;
+  }
+  
+  .big.span3 {
+    top: 90px;
+    background-color: aqua;
+  }
+  
+  #big_check:checked ~ .big.span2 {
+    display: none;
+  }
+  
+  #big_check:checked ~ .big.span1 {
+    width: 85px;
+    transform: rotate(30deg);
+    top: 75px;
+    right: 90px;
+  }
+  
+  #big_check:checked ~ .big.span3 {
+    width: 85px;
+    transform: rotate(-30deg);
+    top: 75px;
+    right: 90px;
+  }
+  
+  #big_check {
+    display: none;
+  }
+  
+  .big.ul {
+    width: 100%;
+    height: 100%;
+    background-color: #2a9ee04a;
+    margin: 0;
+    padding-top: 35px; /*margin of the top list line(学校紹介)*/
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    top: -150%;
+    right: 0;
+    transition: 1s;
+    z-index: 10;
+    margin-top: -40px;
+  }
+  
+  li {
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 0px; /*margin of character(left)*/
+    border-bottom: solid 2px white;
+    margin-left: 30px; /*length of under line(left)*/
+    margin-right: 30px; /*length of under linre(right)*/
+    font-size: 50px;
+    font-family: 'OCR A Extended', sans-serif;
+    color: white;
+  }
+  
+  #big_check:checked ~ .big.ul {
+    top: 48px;
+  }
+  
+  /*about link*/
+  .big.a {
+    color: black;
+    text-decoration: none;
+  }
+
+/*resposible*/
+@media only all and (max-width: 2091px){
+  .big {
+           display: none;
+  }
+  #big_check {
+    display: none;
+  }
+}

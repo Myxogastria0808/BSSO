@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+#XSim_img {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+a {
+    text-decoration:underline;
+text-decoration-color: white;
+}
+
+.XSim_img {
+    height: 30vw;
+}
+.XSim_img_chart1 {
+    height: 40vw;
+}
+
+/*respose of FinMain*/
+#FinMain {
+    font-size: 50px;
+    color: white;
+    font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
+}
+
+/*respose of Fin*/
+#Fin {
+    font-size: 30px;
+    color: white;
+    font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
+}
+
+/*respose of h1*/
+#title {
+    font-size: 50px;
+    color: white;
+    font-family: 'OCR A Extended', sans-serif;
+    margin-top: 40%;
+    text-align: center;
+}
+
+/*respose of h2*/
+#subtitle {
+    font-size: 30px;
+    color: white;
+    font-family: 'OCR A Extended', sans-serif;
+}
+/*respose of p*/
+#p {
+    font-size: 20px;
+    color: white;
+    font-family: 'OCR A Extended', sans-serif;
+}

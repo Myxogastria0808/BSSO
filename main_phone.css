@@ -1,0 +1,155 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.phone.video {
+    height: 500px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 0px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.phone.top_logo {
+    z-index: 100;
+    margin-left: -5px;
+    width: 150px;
+}
+
+.phone.wrap{
+    float: right;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.phone.box{
+    display:table-cell;
+    width:100px;
+    height:100px;
+    text-align:center;
+    vertical-align:middle;
+    color: white;
+    font-size: 25px;
+    font-family: 'OCR A Extended', sans-serif;
+}
+.phone.box_blank{
+    display:table-cell;
+    padding-right: 50px;
+}
+/*Hamburger menu*/
+.phone.nav {
+    position: static;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -600px;
+    margin-right: -700px;
+  }
+  
+  /*box frasme*/
+  .phone.label {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    z-index: 1000;
+  }
+  
+  /*line(three)*/
+  .phone.span {
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 19px;
+    transition: .3s;
+    z-index: 100;
+  }
+  
+  .phone.span1 {
+    top: 16px;
+  }
+  
+  .phone.span2 {
+    top: 31px;
+  }
+  
+  .phone.span3 {
+    top: 46px;
+  }
+  
+  #phone_check:checked ~ .phone.span2 {
+    display: none;
+  }
+  
+  #phone_check:checked ~ .phone.span1 {
+    width: 85px;
+    transform: rotate(30deg);
+    top: 30px;
+    right: 15px;
+  }
+  
+  #phone_check:checked ~ .phone.span3 {
+    width: 85px;
+    transform: rotate(-30deg);
+    top: 30px;
+    right: 15px;
+  }
+  
+  #phone_check {
+    display: none;
+  }
+  
+  .phone.ul {
+    width: 100%;
+    height: 100%;
+    background-color: #2a9ee04a;
+    margin: 0;
+    padding-top: 35px; /*margin of the top list line(学校紹介)*/
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    top: -150%;
+    right: 0;
+    transition: 1s;
+    z-index: 10;
+    margin-top: -80px;
+  }
+  
+  .phone.li {
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 0px; /*margin of character(left)*/
+    border-bottom: solid 2px white;
+    margin-left: 30px; /*length of under line(left)*/
+    margin-right: 30px; /*length of under linre(right)*/
+    font-size: 50px;
+    font-family: 'OCR A Extended', sans-serif;
+    color: white;
+  }
+  
+  #phone_check:checked ~ .phone.ul {
+    top: 48px;
+  }
+  
+  /*about link*/
+  .phone.a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /*resposible*/
+@media only all and (min-width: 601px){
+  .phone {
+           display: none;
+  }
+  #phone_check {
+    display: none;
+  }
+}
