@@ -23,6 +23,7 @@ body {
     font-size: 30px;
     color: white;
     font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
 }
 
 /*respose of p*/
@@ -30,6 +31,7 @@ body {
     font-size: 20px;
     color: white;
     font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
 }
 
 /*response of h3*/
@@ -37,16 +39,17 @@ body {
     font-size: 25px;
     color: white;
     font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
 }
 
 /*a*/
 a {
     text-decoration:underline;
-text-decoration-color: white;
+    text-decoration-color: white;
 }
 
 /*img*/
-.Outline_img {
+#Outline_img {
     list-style: none;
     position: absolute;
     width: 90%;
@@ -54,6 +57,9 @@ text-decoration-color: white;
 }
 .move {
     margin-top: 48%;
+}
+.img_div {
+  margin : 0 auto;
 }
 
 

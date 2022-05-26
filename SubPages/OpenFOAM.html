@@ -63,23 +63,25 @@
     <h2 id="subtitle">Open your terminal and copy and paste under the commands.</h2>
     <p id="p">[Commands to be entered]</p>
     <p id="p">1. Build a docker image</p>
-    <input id="docker_id" type="text" value="docker build -t BSSO:1.0 ." readonly>
-    <button onclick="docker_id_func()">Copy code</button>
-    <script>
-        function docker_id_func() {
-            // コピー対象をJavaScript上で変数として定義する
-            var docker_id = document.getElementById("docker_id");
-
-            // コピー対象のテキストを選択する
-            docker_id.select();
-
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
-
-            // コピーをお知らせする
-            alert("Copying is complete! : " + docker_id.value);
-        }
-    </script>
+    <div class="code">
+        <input id="docker_id" type="text" value="docker build -t BSSO:1.0 ." readonly>
+        <button onclick="docker_id_func()">Copy code</button>
+        <script>
+            function docker_id_func() {
+                // コピー対象をJavaScript上で変数として定義する
+                var docker_id = document.getElementById("docker_id");
+    
+                // コピー対象のテキストを選択する
+                docker_id.select();
+    
+                // 選択しているテキストをクリップボードにコピーする
+                document.execCommand("Copy");
+    
+                // コピーをお知らせする
+                alert("Copying is complete! : " + docker_id.value);
+            }
+        </script>
+    </div>
 
 <!-- 
     <p id="p">2. Research your docker image ID</p>
@@ -107,46 +109,51 @@
     <p id="p">2. Run the docker image and create a docker container</p>
     <p id="p">*Caution1* The part in [ ] have to be changed according to your PC environment.</p>
     <p id="p">*Caution2* You have to set your absolute path which has unzipped your XSim project files to first [ ] area( = [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)])</p>
-    <input id="docker_run" type="text" value="docker run -it --name simulator -v [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)]:/home/OpenFOAM -p 8888:8888 --workdir /home/OpenFOAM BSSO:1.0 /bin/bash" readonly>
-    <button onclick="docker_run_func()">Copy code</button>
-    <script>
-        function docker_run_func() {
-            // コピー対象をJavaScript上で変数として定義する
-            var docker_run = document.getElementById("docker_run");
-
-            // コピー対象のテキストを選択する
-            docker_run.select();
-
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
-
-            // コピーをお知らせする
-            alert("Copying is complete! : " + docker_run.value);
-        }
-    </script>
+    <div class="code">
+        <input id="docker_run" type="text" value="docker run -it --name simulator -v [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)]:/home/OpenFOAM -p 8888:8888 --workdir /home/OpenFOAM BSSO:1.0 /bin/bash" readonly>
+        <button onclick="docker_run_func()">Copy code</button>
+        <script>
+            function docker_run_func() {
+                // コピー対象をJavaScript上で変数として定義する
+                var docker_run = document.getElementById("docker_run");
+    
+                // コピー対象のテキストを選択する
+                docker_run.select();
+    
+                // 選択しているテキストをクリップボードにコピーする
+                document.execCommand("Copy");
+    
+                // コピーをお知らせする
+                alert("Copying is complete! : " + docker_run.value);
+            }
+        </script>
+    </div>
     
     <p id="p">4. Start JupyterLab</p>
-    <input id="jupyter" type="text" value="jupyter lab --ip=0.0.0.0 --allow-root" readonly>
-    <button onclick="jupyter_func()">Copy code</button>
-    <script>
-        function jupyter_func() {
-            // コピー対象をJavaScript上で変数として定義する
-            var jupyter = document.getElementById("jupyter");
-
-            // コピー対象のテキストを選択する
-            jupyter.select();
-
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
-
-            // コピーをお知らせする
-            alert("Copying is complete! : " + jupyter.value);
-        }
-    </script>
+    <div class="code">
+        <input id="jupyter" type="text" value="jupyter lab --ip=0.0.0.0 --allow-root" readonly>
+        <button onclick="jupyter_func()">Copy code</button>
+        <script>
+            function jupyter_func() {
+                // コピー対象をJavaScript上で変数として定義する
+                var jupyter = document.getElementById("jupyter");
+    
+                // コピー対象のテキストを選択する
+                jupyter.select();
+    
+                // 選択しているテキストをクリップボードにコピーする
+                document.execCommand("Copy");
+    
+                // コピーをお知らせする
+                alert("Copying is complete! : " + jupyter.value);
+            }
+        </script>
+    </div>
 
 <p id="p">5. Move your project folder`s directry</p>
 <p id="p">*Caution* The part in [ ] have to be changed according to your PC environment.</p>
-<input id="cd" type="text" value="cd [YourProjectName]" readonly>
+<div class="code">
+    <input id="cd" type="text" value="cd [YourProjectName]" readonly>
 <button onclick="cd_func()">Copy code</button>
 <script>
     function cd_func() {
@@ -163,9 +170,11 @@
         alert("Copying is complete! : " + cd.value);
     }
 </script>
+</div>
 
 <p id="p">6. Change your project folder`s administrator privileges</p>
-<input id="chmod" type="text" value="chmod +x All*" readonly>
+<div class="code">
+    <input id="chmod" type="text" value="chmod +x All*" readonly>
 <button onclick="chmod_func()">Copy code</button>
 <script>
     function chmod_func() {
@@ -182,9 +191,11 @@
         alert("Copying is complete! : " + chmod.value);
     }
 </script>
+</div>
 
 <p id="p">7. Calculate your project with OpenFOAM8</p>
-<input id="allrun" type="text" value="./Allrun" readonly>
+<div class="code">
+    <input id="allrun" type="text" value="./Allrun" readonly>
 <button onclick="allrun_func()">Copy code</button>
 <script>
     function allrun_func() {
@@ -201,33 +212,53 @@
         alert("Copying is complete! : " + allrun.value);
     }
 </script>
+</div>
+
 <p id="p">8. Wait patiently!</p>
 
 <h2 id="protocol">---3---</h2>
 <h2 id="subtitle">Start ParaView and visualize your project</h2>
 <p id="p">When your PC finish calculating your project, please start ParaView and follow these steps.</p>
 <p id="p">1. Open your project folder as shown in the following image</p>
-<img class="OpenFOAM_img" src="./PARA1.png">
+<div class="img_div">
+    <img class="OpenFOAM_img" src="./PARA1.png">
+</div>
 <p id="p">2. Select "All Files(*)"</p>
-<img class="OpenFOAM_img_h" src="./PARA2.png">
+<div class="img_div">
+    <img class="OpenFOAM_img_h" src="./PARA2.png">
+</div>
 <p id="p">3. Select the "YourProjectName.OpenFOAM" file</p>
-<img class="OpenFOAM_img_ss" src="./PARA3.png">
+<div class="img_div">
+    <img class="OpenFOAM_img" src="./PARA3.png">
+</div>
 <p id="p">4. Select the "OpenFOAMReader"</p>
-<img class="OpenFOAM_img" src="./PARA4.png">
+<div class="img_div">
+    <img class="OpenFOAM_img_s" src="./PARA4.png">
+</div>
 <p id="p">5. Click "Apply" button</p>
-<img class="OpenFOAM_img_s" src="./PARA5.png">
+<div class="img_div">
+    <img class="OpenFOAM_img_s" src="./PARA5.png">
+</div>
 <p id="p">6. Change "Opacity" value</p>
-<img class="OpenFOAM_img" src="./PARA6.png">
+<div class="img_div">
+    <img class="OpenFOAM_img" src="./PARA6.png">
+</div>
 <p id="p">＊＊How to make simulation results easier to read＊＊</p>
 <p id="p">These are some options to make your simulation results easier to see</p>
-<img class="OpenFOAM_img" src="./PARA7.png">
+<div class="img_div">
+    <img class="OpenFOAM_img" src="./PARA7.png">
+</div>
 <p id="p">[How to add slicer into your project]</p>
 <p id="p">1. Click slice button</p>
 <p id="p">2. Adjust a slice position</p>
 <p id="p">3. Click "Apply" button</p>
-<img class="OpenFOAM_img" src="./PARA8.png">
+<div class="img_div">
+    <img class="OpenFOAM_img" src="./PARA8.png">
+</div>
 <p id="p">finish!</p>
-<img class="OpenFOAM_img" src="./PARA9.png">
+<div class="img_div">
+    <img class="OpenFOAM_img" src="./PARA9.png">
+</div>
 <h1 id="FinMain">Complete!!</h1>
 <h2 id="Fin">Thank you for your hard work!!!</h2>
 </body>

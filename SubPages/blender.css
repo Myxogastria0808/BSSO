@@ -20,10 +20,13 @@ body {
 #mouse {
     width: 400px;
 }
+.img_div {
+  text-align: center;
+}
 
 a {
     text-decoration:underline;
-text-decoration-color: white;
+    text-decoration-color: white;
 }
 
 /*respose of h1*/
@@ -40,6 +43,7 @@ text-decoration-color: white;
     font-size: 30px;
     color: white;
     font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
 }
 
 /*response of p*/
@@ -47,6 +51,7 @@ text-decoration-color: white;
     font-size: 20px;
     color: white;
     font-family: 'OCR A Extended', sans-serif;
+    text-align: center;
 }
 
 /*Hamburger menu*/
