@@ -24,6 +24,12 @@ body {
 .OpenFOAM_img_s {
     height: 50vw;
 }
+.OpenFOAM_img_ss {
+  height: 5vw;
+}
+.OpenFOAM_img_h {
+  height: 10vw;
+}
 
 /*respose of protocol*/
 #protocol {
