@@ -45,7 +45,13 @@ body {
 /*a*/
 a {
     text-decoration:underline;
-    text-decoration-color: white;
+    text-decoration-color: aqua;
+}
+#url {
+  font-size: 20px;
+  color: aqua;
+  font-family: 'OCR A Extended', sans-serif;
+  text-align: center;
 }
 
 /*img*/
