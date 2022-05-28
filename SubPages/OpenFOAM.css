@@ -30,7 +30,9 @@ body {
 .img_div {
   text-align: center;
 }
-
+.OpenFOAM_img_structure {
+  height: 20vw;
+}
 /*resposible of code*/
 .code {
   text-align: center;

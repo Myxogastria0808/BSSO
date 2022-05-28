@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://myxogastria0808.github.io/BSSO/SubPages/OpenFOAM.css">
+    <link rel="stylesheet" type="text/css" href="./OpenFOAM.css">
     <link href="http://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
     <style>
         @import url('http://fonts.cdnfonts.com/css/ocr-a-extended');
@@ -64,6 +65,10 @@
     <h2 id="subtitle">Open your terminal and copy and paste under the commands.</h2>
     <p id="p">[Commands to be entered]</p>
     <p id="p">1. Build a docker image</p>
+    <p id="p">Please place each file as shown in this diagram, and then move to the directory(it is the directory at the very front of the diagram.) before running this command.</p>
+    <div class="img_div">
+        <img class="OpenFOAM_img_structure" src="./structure.png">
+    </div>
     <div class="code">
         <input id="docker_id" type="text" value="docker build -t BSSO:1.0 ." readonly>
         <button onclick="docker_id_func()">Copy code</button>
