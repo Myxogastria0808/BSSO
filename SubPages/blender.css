@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+  background-color: rgb(62, 59, 59);
 }
 /*Top logo*/
 .top_logo {
@@ -19,6 +19,9 @@ body {
 
 #mouse {
     width: 400px;
+}
+#export {
+  height: 50vw;
 }
 .img_div {
   text-align: center;
