@@ -68,7 +68,7 @@
         <img class="OpenFOAM_img_structure" src="./structure.png">
     </div>
     <div class="code">
-        <input id="docker_id" type="text" value="docker build -t BSSO:1.0 ." readonly>
+        <input id="docker_id" type="text" value="docker build -t bsso:1.0 ." readonly>
         <button onclick="docker_id_func()">Copy code</button>
         <script>
             function docker_id_func() {
@@ -114,7 +114,7 @@
     <p id="p">*Caution1* The part in [ ] have to be changed according to your PC environment.</p>
     <p id="p">*Caution2* You have to set your absolute path which has unzipped your XSim project files to first [ ] area( = [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)])</p>
     <div class="code">
-        <input id="docker_run" type="text" value="docker run -it --name simulator -v [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)]:/home/OpenFOAM -p 8888:8888 --workdir /home/OpenFOAM BSSO:1.0 /bin/bash" readonly>
+        <input id="docker_run" type="text" value="docker run -it --name simulator -v [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)]:/home/OpenFOAM -p 8888:8888 --workdir /home/OpenFOAM bsso:1.0 /bin/bash" readonly>
         <button onclick="docker_run_func()">Copy code</button>
         <script>
             function docker_run_func() {
@@ -152,6 +152,15 @@
                 alert("Copying is complete! : " + jupyter.value);
             }
         </script>
+    </div>
+
+    <p id="p">Then, copy the URL(the part in highlighter) and paste your browser address bar.</p>
+    <div class="img_div">
+        <img class="OpenFOAM_img" src="./OpenFOAM_jupyter.png">
+    </div>
+    <p id="p">Please click "Terminal".</p>
+    <div class="img_div">
+        <img class="OpenFOAM_img" src="./OpenFOAM_jupyter1.png">
     </div>
 
 <p id="p">5. Move your project folder`s directry</p>
