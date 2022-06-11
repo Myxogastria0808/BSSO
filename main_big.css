@@ -29,15 +29,7 @@
 .big.logo {
   width: 70vh;
 }
-.pc.logo {
-  width: 70vh;
-}
-.tablet.logo {
-  width: 70vh;
-}
-.phone.logo {
-  width: 70vw;
-}
+
 @keyframes byeShutter {
 70% {
   opacity: 1;
