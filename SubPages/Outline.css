@@ -120,13 +120,11 @@ a {
   text-align: center;
   margin: 0;
 }
-.move {
-    margin-top: 48%;
-}
-/* .img_div {
+.img_div {
+  display: block;
+  margin: auto;
   text-align: center;
-  margin: ;
-} */
+}
 
 /*Hamburger menu*/
 .phone.nav {
