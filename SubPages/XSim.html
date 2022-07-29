@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://myxogastria0808.github.io/BSSO/SubPages/XSim.css">
     <link rel="stylesheet" type="text/css" href="./XSim.css">
+    <link rel="stylesheet" type="text/css" href="./width.css">
     <link href="http://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
     <style>
         @import url('http://fonts.cdnfonts.com/css/ocr-a-extended');
@@ -51,161 +52,163 @@
     <img class="top_logo" src="./3D_simuration_tablet.png" alt="Top logo">
     <img id="XSim_img" src="./XSim_Top.png">
     <h1 id="title">XSim</h1>
-    <a href="https://xsim.work/" target="_blank"  rel="noopener noreferrer">
-        <p id="url">Please click here to access "XSim".</p>
-    </a>
-    <h2 id="subtitle">Input Project Name</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./4)_result.png">
+    <div class="width">
+      <a href="https://xsim.work/" target="_blank"  rel="noopener noreferrer">
+          <p id="url">Please click here to access "XSim".</p>
+      </a>
+      <h2 id="subtitle">Input Project Name</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./4)_result.png">
+      </div>
+      <p id="p">Please input a project name.</p>
+      <h2 id="subtitle">Import 3D object</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./5)_result.png">
+      </div>
+      <p id="p">Please click the "Select files" tab and import a 3D object(.stl, .ast, .stla, .obj, .3ds) to the Website</p>
+      <h2 id="subtitle">Add Calcuration Area</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./6)_result.png">
+      </div>
+      <p id="p">Please click "Add shapes" tob and set the type of shape and index numbers.</p>
+      <p id="p">*Caution* We have only tried the cube.</p>
+      <h2 id="subtitle">Edit a 3D Object and Calculation Area</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./7)_result.png">
+      </div>
+      <p id="p">Please click "Edit shapes" tab.</p>
+      <p id="p">At first, please choose the targets which you want to edit.</p>
+      <p id="p">Second, please choose the edit type.</p>
+      <div class="img_div">
+        <img class="XSim_img" src="./8)_result.png">
+      </div>
+      <p id="p">Third, please click "Scaling factor" and choose "Specified value".</p>
+      <p id="p">When you choose "Specified value", if you want to make them larger, please change the index number 1 to 10,</p>
+      <p id="p"> if you want to make them smaller, plaese change the index number 1 to 0.1.</p>
+      <p id="p">*Caution1* We recommend that you don`t change "Sealing center".</p>
+      <p id="p">*Caution2* The size of calculation area have to be about ten times as larege as the object.</p>
+      <p id="p">Finally, please click apply.</p>
+      <h2 id="subtitle">Fine Mesh</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./9)_result.png">
+      </div>
+      <p id="p">Please set these values to fine your calculation area.</p>
+      <p id="p">[Volume mesh setting]</p>
+      <p id="p">--Target number of base meshes ＆ Number of base meshes--</p>
+      <p id="p">This value is target number of meshes to be fined, "Number of base meshes" is determined base on "Target number of base meshes".</p>
+      <p id="p">--Maximum number of meshes--</p>
+      <p id="p">When you calculate your simulation project, the value stop your PC from crashing if you set it.</p>
+      <p id="p">*Caution* Valid value is about 100 times as much as number of members.</p>
+      <div class="img_div">
+        <img class="XSim_img_chart1" src="./chart1.png">
+      </div>
+      <p id="p">Chart 1</p>
+      <p id="p">--Minimum coordinate--</p>
+      <p id="p">The minimum point of chart 1 of mesh area(Area with white lines in the grid)</p>
+      <p id="p">--Maximum coordinate--</p>
+      <p id="p">The maximum point of chart 1 of mesh area(Area with white lines in the grid)</p>
+      <p id="p">*Caution* If these value are nice round numbers, you should change them into fractions.</p>
+      <p id="p">ex) before(1, 1, 1) --> after(1.001, 1.001, 1.001)</p>
+      <p id="p">--Computional domain--</p>
+      <p id="p">The area containing these coordinates is the area where the fluid is calculated.</p>
+      <p id="p">Therefore, if these coordinates are within the target object, the calculation cannot be performed.</p>
+      <h2 id="subtitle">＊advanced configuration＊</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./10)_result.png">
+      </div>
+      <p id="p">[Refinement settings]</p>
+      <div class="img_div">
+        <img class="XSim_refine" src="./refine.png">
+      </div>
+      <p id="p">--Minimum coordinate--</p>
+      <p id="p">The minimum point of chart 1 of the refining area</p>
+      <p id="p">--Maximum coordinate--</p>
+      <p id="p">The maximum point of chart 1 of the refining area</p>
+      <p id="p">*Caution* You had better not change other values.</p>
+      <h2 id="subtitle">Set Basic Settings</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./11)_result.png">
+      </div>
+      <p id="p">--Steady ＆ Transient--</p>
+      <p id="p">-Steady-</p>
+      <p id="p">constant fluid flowing</p>
+      <p id="p">-Transient-</p>
+      <p id="p">turbulent flow</p>
+      <p id="p">If you want to simulate your project which the object is placed in natural world, please choose "Transient".</p>
+      <p id="p">If you want to simulate a wind tunnel experiment, please choose "Steady".</p>
+      <p id="p">--End time--</p>
+      <p id="p">The total time of your project.</p>
+      <p id="p">*Caution* You had better not change other values.</p>
+      <h2 id="subtitle">Determine Physical Property</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./12)_result.png">
+      </div>
+      <p id="p">--Property name--</p>
+      <p id="p">Please choose the physical property whether Air or Water.</p>
+      <p id="p">*Caution* You had better not change other values.</p>
+      <h2 id="subtitle">Set Initial Condition</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./14)_result.png">
+      </div>
+      <p id="p">You don`t have to add any options.</p>
+      <h2 id="subtitle">Set Flow Boundary Condition</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./15)_result.png">
+      </div>
+      <p id="p">Please set the wind behavior for fluid on each faces and the object surface.</p>
+      <p id="p">＊＊An example of setting＊＊</p>
+      <div class="img_div">
+        <img class="XSim_img" src="./18)_result.png">
+      </div>
+      <p id="p">-----------------------------------</p>
+      <p id="p">Region: your object</p>
+      <p id="p">Condition: Stationary wall</p>
+      <p id="p">-----------------------------------</p>
+      <p id="p">Region: XMin</p>
+      <p id="p">Condition: Fixed flow velocity</p>
+      <p id="p">Flow velocity: (1, 0, 0)m/s</p>
+      <p id="p">-----------------------------------</p>
+      <p id="p">Region: XMax</p>
+      <p id="p">Condition: Natural inflow/outflow</p>
+      <p id="p">-----------------------------------</p>
+      <h2 id="subtitle">Set Calculation Settings</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./19)_result.png">
+      </div>
+      <p id="p">--Parallel number--</p>
+      <p id="p">Please check the number of your PC`s CPU threads and please input the value into this item.</p>
+      <p id="p">*Caution* You had better not change other values.</p>
+      <h2 id="subtitle">Set Output</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./20)_result.png">
+      </div>
+      <p id="p">--Type--</p>
+      <p id="p">Please choose whether "Each specified cycles" or "Each specified time".</p>
+      <p id="p">We recommend "Each specified time",</p>
+      <p id="p"> because if you calculated your project which was selected "Each specified time",</p>
+      <p id="p"> your PC can crash and fail your project.</p>
+      <p id="p">--Interval--</p>
+      <p id="p">If you choose "Each specified time", you can set its interval in this value.</p>
+      <p id="p">--Other options--</p>
+      <div class="img_div">
+        <img class="XSim_img" src="./21)_result.png">
+      </div>
+      <p id="p">Please click "Residuals", "Velocity" and "Pressure".</p>
+      <p id="p">*Caution* You had better not change other values.</p>
+      <h2 id="subtitle">Export your project</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./22)_result.png">
+      </div>
+      <p id="p">--Format--</p>
+      <p id="p">You have to choose "OpenFOAM8" and click the "Export" button.</p>
+      <h2 id="subtitle">Save your project</h2>
+      <div class="img_div">
+        <img class="XSim_img" src="./23)_result.png">
+      </div>
+      <p id="p">If you have a Google/Twitter/Facebook account, you can save your project.</p>
+      <p id="p">*Caution* you can only save five projects per account.</p>
+      <h1 id="FinMain">Finish!!</h1>
+      <h2 id="Fin">Now you are a XSim master!</h2>
     </div>
-    <p id="p">Please input a project name.</p>
-    <h2 id="subtitle">Import 3D object</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./5)_result.png">
-    </div>
-    <p id="p">Please click the "Select files" tab and import a 3D object(.stl, .ast, .stla, .obj, .3ds) to the Website</p>
-    <h2 id="subtitle">Add Calcuration Area</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./6)_result.png">
-    </div>
-    <p id="p">Please click "Add shapes" tob and set the type of shape and index numbers.</p>
-    <p id="p">*Caution* We have only tried the cube.</p>
-    <h2 id="subtitle">Edit a 3D Object and Calculation Area</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./7)_result.png">
-    </div>
-    <p id="p">Please click "Edit shapes" tab.</p>
-    <p id="p">At first, please choose the targets which you want to edit.</p>
-    <p id="p">Second, please choose the edit type.</p>
-    <div class="img_div">
-      <img class="XSim_img" src="./8)_result.png">
-    </div>
-    <p id="p">Third, please click "Scaling factor" and choose "Specified value".</p>
-    <p id="p">When you choose "Specified value", if you want to make them larger, please change the index number 1 to 10,</p>
-    <p id="p"> if you want to make them smaller, plaese change the index number 1 to 0.1.</p>
-    <p id="p">*Caution1* We recommend that you don`t change "Sealing center".</p>
-    <p id="p">*Caution2* The size of calculation area have to be about ten times as larege as the object.</p>
-    <p id="p">Finally, please click apply.</p>
-    <h2 id="subtitle">Fine Mesh</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./9)_result.png">
-    </div>
-    <p id="p">Please set these values to fine your calculation area.</p>
-    <p id="p">[Volume mesh setting]</p>
-    <p id="p">--Target number of base meshes ＆ Number of base meshes--</p>
-    <p id="p">This value is target number of meshes to be fined, "Number of base meshes" is determined base on "Target number of base meshes".</p>
-    <p id="p">--Maximum number of meshes--</p>
-    <p id="p">When you calculate your simulation project, the value stop your PC from crashing if you set it.</p>
-    <p id="p">*Caution* Valid value is about 100 times as much as number of members.</p>
-    <div class="img_div">
-      <img class="XSim_img_chart1" src="./chart1.png">
-    </div>
-    <p id="p">Chart 1</p>
-    <p id="p">--Minimum coordinate--</p>
-    <p id="p">The minimum point of chart 1 of mesh area(Area with white lines in the grid)</p>
-    <p id="p">--Maximum coordinate--</p>
-    <p id="p">The maximum point of chart 1 of mesh area(Area with white lines in the grid)</p>
-    <p id="p">*Caution* If these value are nice round numbers, you should change them into fractions.</p>
-    <p id="p">ex) before(1, 1, 1) --> after(1.001, 1.001, 1.001)</p>
-    <p id="p">--Computional domain--</p>
-    <p id="p">The area containing these coordinates is the area where the fluid is calculated.</p>
-    <p id="p">Therefore, if these coordinates are within the target object, the calculation cannot be performed.</p>
-    <h2 id="subtitle">＊advanced configuration＊</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./10)_result.png">
-    </div>
-    <p id="p">[Refinement settings]</p>
-    <div class="img_div">
-      <img class="XSim_img" src="./refine.png">
-    </div>
-    <p id="p">--Minimum coordinate--</p>
-    <p id="p">The minimum point of chart 1 of the refining area</p>
-    <p id="p">--Maximum coordinate--</p>
-    <p id="p">The maximum point of chart 1 of the refining area</p>
-    <p id="p">*Caution* You had better not change other values.</p>
-    <h2 id="subtitle">Set Basic Settings</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./11)_result.png">
-    </div>
-    <p id="p">--Steady ＆ Transient--</p>
-    <p id="p">-Steady-</p>
-    <p id="p">constant fluid flowing</p>
-    <p id="p">-Transient-</p>
-    <p id="p">turbulent flow</p>
-    <p id="p">If you want to simulate your project which the object is placed in natural world, please choose "Transient".</p>
-    <p id="p">If you want to simulate a wind tunnel experiment, please choose "Steady".</p>
-    <p id="p">--End time--</p>
-    <p id="p">The total time of your project.</p>
-    <p id="p">*Caution* You had better not change other values.</p>
-    <h2 id="subtitle">Determine Physical Property</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./12)_result.png">
-    </div>
-    <p id="p">--Property name--</p>
-    <p id="p">Please choose the physical property whether Air or Water.</p>
-    <p id="p">*Caution* You had better not change other values.</p>
-    <h2 id="subtitle">Set Initial Condition</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./14)_result.png">
-    </div>
-    <p id="p">You don`t have to add any options.</p>
-    <h2 id="subtitle">Set Flow Boundary Condition</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./15)_result.png">
-    </div>
-    <p id="p">Please set the wind behavior for fluid on each faces and the object surface.</p>
-    <p id="p">＊＊An example of setting＊＊</p>
-    <div class="img_div">
-      <img class="XSim_img" src="./18)_result.png">
-    </div>
-    <p id="p">-----------------------------------</p>
-    <p id="p">Region: your object</p>
-    <p id="p">Condition: Stationary wall</p>
-    <p id="p">-----------------------------------</p>
-    <p id="p">Region: XMin</p>
-    <p id="p">Condition: Fixed flow velocity</p>
-    <p id="p">Flow velocity: (1, 0, 0)m/s</p>
-    <p id="p">-----------------------------------</p>
-    <p id="p">Region: XMax</p>
-    <p id="p">Condition: Natural inflow/outflow</p>
-    <p id="p">-----------------------------------</p>
-    <h2 id="subtitle">Set Calculation Settings</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./19)_result.png">
-    </div>
-    <p id="p">--Parallel number--</p>
-    <p id="p">Please check the number of your PC`s CPU threads and please input the value into this item.</p>
-    <p id="p">*Caution* You had better not change other values.</p>
-    <h2 id="subtitle">Set Output</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./20)_result.png">
-    </div>
-    <p id="p">--Type--</p>
-    <p id="p">Please choose whether "Each specified cycles" or "Each specified time".</p>
-    <p id="p">We recommend "Each specified time",</p>
-    <p id="p"> because if you calculated your project which was selected "Each specified time",</p>
-    <p id="p"> your PC can crash and fail your project.</p>
-    <p id="p">--Interval--</p>
-    <p id="p">If you choose "Each specified time", you can set its interval in this value.</p>
-    <p id="p">--Other options--</p>
-    <div class="img_div">
-      <img class="XSim_img" src="./21)_result.png">
-    </div>
-    <p id="p">Please click "Residuals", "Velocity" and "Pressure".</p>
-    <p id="p">*Caution* You had better not change other values.</p>
-    <h2 id="subtitle">Export your project</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./22)_result.png">
-    </div>
-    <p id="p">--Format--</p>
-    <p id="p">You have to choose "OpenFOAM8" and click the "Export" button.</p>
-    <h2 id="subtitle">Save your project</h2>
-    <div class="img_div">
-      <img class="XSim_img" src="./23)_result.png">
-    </div>
-    <p id="p">If you have a Google/Twitter/Facebook account, you can save your project.</p>
-    <p id="p">*Caution* you can only save five projects per account.</p>
-    <h1 id="FinMain">Finish!!</h1>
-    <h2 id="Fin">Now you are a XSim master!</h2>
 </body>
 </html>
