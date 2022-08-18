@@ -63,19 +63,19 @@
         <a href="https://www.paraview.org/download/" target="_blank"  rel="noopener noreferrer">
             <p id="url">ParaView: This is a open source program for visualization and interactive operation of 3D simulation.</p>
         </a>
-        <p id="p">[Dockerfile download link]</p>
-        <a href="https://drive.google.com/file/d/16BfIpx-495uwRA6hHMwqUSsjwKNREyQq/view?usp=sharing" target="_blank"  rel="noopener noreferrer">
-            <p id="url">Dockerfile: This file can create a docker image of OpenFOAM8 and JupyterLab.</p>
+        <p id="p">[Setup set download link]</p>
+        <a href="https://drive.google.com/file/d/1pW7bGFXtEsmiFc4X7uxrKZ3PM88Jg71w/view?usp=sharing" target="_blank"  rel="noopener noreferrer">
+            <p id="url">Setup set: This file can create a docker image of OpenFOAM8 and JupyterLab.</p>
         </a>
         <h2 id="protocol">---2---</h2>
-        <h2 id="subtitle">Open your terminal and copy and paste under the commands.</h2>
+        <h2 id="subtitle">Environment construction and simulation calculations</h2>
         <p id="p">[Commands to be entered]</p>
-        <p id="p">1. Build a docker image</p>
-        <p id="p">Please place each file as shown in this diagram, and then move to the directory(it is the directory at the very front of the diagram.) before running this command.</p>
+        <p id="p">1. Preparations before launching Setup.cmd</p>
+        <p id="p">Please place each file as shown in this diagram, and then start "Setpu.cmd".</p>
         <div class="img_div">
             <img class="OpenFOAM_img_structure" src="./structure.png">
         </div>
-        <div class="code">
+        <!-- <div class="code">
             <input id="docker_id" type="text" value="docker build -t bsso:1.0 ." readonly>
             <button onclick="docker_id_func()">Copy code</button>
             <script>
@@ -93,12 +93,12 @@
                     alert("Copying is complete! : " + docker_id.value);
                 }
             </script>
-        </div>
+        </div> -->
     
-        <p id="p">2. Run the docker image and create a docker container</p>
-        <p id="p">*Caution1* The part in [ ] have to be changed according to your PC environment.</p>
-        <p id="p">*Caution2* You have to set your absolute path which has unzipped your XSim project files to first [ ] area( = [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)])</p>
-        <div class="code">
+        <p id="p">2. Follow the instructions in Setup.cmd to build the environment</p>
+        <!-- <p id="p">*Caution1* The part in [ ] have to be changed according to your PC environment.</p>
+        <p id="p">*Caution2* You have to set your absolute path which has unzipped your XSim project files to first [ ] area( = [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)])</p> -->
+        <!-- <div class="code">
             <input id="docker_run" type="text" value="docker run -it --name simulator -v [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)]:/home/OpenFOAM -p 8888:8888 --workdir /home/OpenFOAM bsso:1.0 /bin/bash" readonly>
             <button onclick="docker_run_func()">Copy code</button>
             <script>
@@ -116,9 +116,9 @@
                     alert("Copying is complete! : " + docker_run.value);
                 }
             </script>
-        </div>
+        </div> -->
         
-        <p id="p">4. Start JupyterLab</p>
+        <p id="p">3. Start JupyterLab</p>
         <div class="code">
             <input id="jupyter" type="text" value="jupyter lab --ip=0.0.0.0 --allow-root" readonly>
             <button onclick="jupyter_func()">Copy code</button>
@@ -148,7 +148,7 @@
             <img class="OpenFOAM_img" src="./OpenFOAM_jupyter1.png">
         </div>
     
-    <p id="p">5. Move your project folder`s directry</p>
+    <p id="p">4. Move your project folder`s directry</p>
     <p id="p">*Caution* The part in [ ] have to be changed according to your PC environment.</p>
     <div class="code">
         <input id="cd" type="text" value="cd [YourProjectName]" readonly>
@@ -170,7 +170,7 @@
     </script>
     </div>
     
-    <p id="p">6. Change your project folder`s administrator privileges</p>
+    <p id="p">5. Change your project folder`s administrator privileges</p>
     <div class="code">
         <input id="chmod" type="text" value="chmod +x All*" readonly>
     <button onclick="chmod_func()">Copy code</button>
@@ -191,7 +191,7 @@
     </script>
     </div>
     
-    <p id="p">7. Calculate your project with OpenFOAM8</p>
+    <p id="p">6. Calculate your project with OpenFOAM8</p>
     <div class="code">
         <input id="allrun" type="text" value="./Allrun" readonly>
     <button onclick="allrun_func()">Copy code</button>
@@ -212,7 +212,7 @@
     </script>
     </div>
     
-    <p id="p">8. Wait patiently!</p>
+    <p id="p">7. Wait patiently!</p>
     
     <h2 id="protocol">---3---</h2>
     <h2 id="subtitle">Start ParaView and visualize your project</h2>
