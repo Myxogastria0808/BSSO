@@ -29,26 +29,25 @@
         <span class="phone span3 span"></span>
         <label class="phone label" for="phone_check"></label>
         <ul class="phone ul">
-          <br></br>
-          <br></br>
-          <a class="phone a" href="https://myxogastria0808.github.io/BSSO/" target="_blank"  rel="noopener noreferrer">
+        <br></br>
+        <br></br>
+        <a class="phone a" href="https://myxogastria0808.github.io/BSSO/" target="_blank"  rel="noopener noreferrer">
             <li class="phone li">Top</li>
-          </a>
-          <a class="phone a" href="./Outline.html" target="_blank"  rel="noopener noreferrer">
-              <li class="phone li">Outline</li>
-          </a>
-          <a class="phone a" href="./blender.html" target="_blank"  rel="noopener noreferrer">
+        </a>
+        <a class="phone a" href="./Outline.html" target="_blank"  rel="noopener noreferrer">
+                <li class="phone li">Outline</li>
+        </a>
+        <a class="phone a" href="./blender.html" target="_blank"  rel="noopener noreferrer">
             <li class="phone li">blender</li>
-          </a>
-          <a class="phone a" href="./XSim.html" target="_blank"  rel="noopener noreferrer">
+        </a>
+        <a class="phone a" href="./XSim.html" target="_blank"  rel="noopener noreferrer">
             <li class="phone li">XSim</li>
-          </a>
-          <a class="phone a" href="./OpenFOAM.html" target="_blank"  rel="noopener noreferrer">
+        </a>
+        <a class="phone a" href="./OpenFOAM.html" target="_blank"  rel="noopener noreferrer">
             <li class="phone li">OpenFOAM</li>
-          </a>
+        </a>
         </ul>
     </nav>
-
     <img class="top_logo" src="./3D_simuration_tablet.png" alt="Top logo">
     <img id="OpenFOAM_img" src="./OpenFOAM.png">
     <h1 id="title">OpenFOAM</h1>
@@ -64,7 +63,7 @@
             <p id="url">ParaView: This is a open source program for visualization and interactive operation of 3D simulation.</p>
         </a>
         <p id="p">[Setup set download link]</p>
-        <a href="https://drive.google.com/file/d/1pW7bGFXtEsmiFc4X7uxrKZ3PM88Jg71w/view?usp=sharing" target="_blank"  rel="noopener noreferrer">
+        <a href="../downloads/BSSO.zip" target="_blank"  rel="noopener noreferrer">
             <p id="url">Setup set: This file can create a docker image of OpenFOAM8 and JupyterLab.</p>
         </a>
         <h2 id="protocol">---2---</h2>
@@ -75,49 +74,7 @@
         <div class="img_div">
             <img class="OpenFOAM_img_structure" src="./structure.png">
         </div>
-        <!-- <div class="code">
-            <input id="docker_id" type="text" value="docker build -t bsso:1.0 ." readonly>
-            <button onclick="docker_id_func()">Copy code</button>
-            <script>
-                function docker_id_func() {
-                    // コピー対象をJavaScript上で変数として定義する
-                    var docker_id = document.getElementById("docker_id");
-        
-                    // コピー対象のテキストを選択する
-                    docker_id.select();
-        
-                    // 選択しているテキストをクリップボードにコピーする
-                    document.execCommand("Copy");
-        
-                    // コピーをお知らせする
-                    alert("Copying is complete! : " + docker_id.value);
-                }
-            </script>
-        </div> -->
-    
         <p id="p">2. Follow the instructions in Setup.cmd to build the environment</p>
-        <!-- <p id="p">*Caution1* The part in [ ] have to be changed according to your PC environment.</p>
-        <p id="p">*Caution2* You have to set your absolute path which has unzipped your XSim project files to first [ ] area( = [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)])</p> -->
-        <!-- <div class="code">
-            <input id="docker_run" type="text" value="docker run -it --name simulator -v [Synchronize the files of the simulation generated in the Docker container you created (enter the absolute path of your HOSTPC)]:/home/OpenFOAM -p 8888:8888 --workdir /home/OpenFOAM bsso:1.0 /bin/bash" readonly>
-            <button onclick="docker_run_func()">Copy code</button>
-            <script>
-                function docker_run_func() {
-                    // コピー対象をJavaScript上で変数として定義する
-                    var docker_run = document.getElementById("docker_run");
-        
-                    // コピー対象のテキストを選択する
-                    docker_run.select();
-        
-                    // 選択しているテキストをクリップボードにコピーする
-                    document.execCommand("Copy");
-        
-                    // コピーをお知らせする
-                    alert("Copying is complete! : " + docker_run.value);
-                }
-            </script>
-        </div> -->
-        
         <p id="p">3. Start JupyterLab</p>
         <div class="code">
             <input id="jupyter" type="text" value="jupyter lab --ip=0.0.0.0 --allow-root" readonly>
@@ -126,19 +83,15 @@
                 function jupyter_func() {
                     // コピー対象をJavaScript上で変数として定義する
                     var jupyter = document.getElementById("jupyter");
-        
                     // コピー対象のテキストを選択する
                     jupyter.select();
-        
                     // 選択しているテキストをクリップボードにコピーする
                     document.execCommand("Copy");
-        
                     // コピーをお知らせする
                     alert("Copying is complete! : " + jupyter.value);
                 }
             </script>
         </div>
-    
         <p id="p">Then, copy the URL(the part in highlighter) and paste your browser address bar.</p>
         <div class="img_div">
             <img class="OpenFOAM_img" src="./OpenFOAM_jupyter.png">
@@ -147,7 +100,6 @@
         <div class="img_div">
             <img class="OpenFOAM_img" src="./OpenFOAM_jupyter1.png">
         </div>
-    
     <p id="p">4. Move your project folder`s directry</p>
     <p id="p">*Caution* The part in [ ] have to be changed according to your PC environment.</p>
     <div class="code">
@@ -157,19 +109,15 @@
         function cd_func() {
             // コピー対象をJavaScript上で変数として定義する
             var cd = document.getElementById("cd");
-    
             // コピー対象のテキストを選択する
             cd.select();
-    
             // 選択しているテキストをクリップボードにコピーする
             document.execCommand("Copy");
-    
             // コピーをお知らせする
             alert("Copying is complete! : " + cd.value);
         }
     </script>
     </div>
-    
     <p id="p">5. Change your project folder`s administrator privileges</p>
     <div class="code">
         <input id="chmod" type="text" value="chmod +x All*" readonly>
@@ -178,19 +126,15 @@
         function chmod_func() {
             // コピー対象をJavaScript上で変数として定義する
             var chmod = document.getElementById("chmod");
-    
             // コピー対象のテキストを選択する
             chmod.select();
-    
             // 選択しているテキストをクリップボードにコピーする
             document.execCommand("Copy");
-    
             // コピーをお知らせする
             alert("Copying is complete! : " + chmod.value);
         }
     </script>
     </div>
-    
     <p id="p">6. Calculate your project with OpenFOAM8</p>
     <div class="code">
         <input id="allrun" type="text" value="./Allrun" readonly>
@@ -199,21 +143,16 @@
         function allrun_func() {
             // コピー対象をJavaScript上で変数として定義する
             var allrun = document.getElementById("allrun");
-    
             // コピー対象のテキストを選択する
             allrun.select();
-    
             // 選択しているテキストをクリップボードにコピーする
             document.execCommand("Copy");
-    
             // コピーをお知らせする
             alert("Copying is complete! : " + allrun.value);
         }
     </script>
     </div>
-    
     <p id="p">7. Wait patiently!</p>
-    
     <h2 id="protocol">---3---</h2>
     <h2 id="subtitle">Start ParaView and visualize your project</h2>
     <p id="p">When your PC finish calculating your project, please start ParaView and follow these steps.</p>
